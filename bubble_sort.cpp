@@ -4,12 +4,6 @@
 
 int iA[10] = {3, 6, 9, 7, 0, 8, 2, 1, 5, 4};
 
-void printArray(int* arr, const int size){
-    for (int i = 0; i < size; ++i)
-        printf("%d ", arr[i]);
-    puts("");
-}
-
 void sort(int *arr, const int size)
 {
     // add flag to know when sorting is over
@@ -42,6 +36,12 @@ void sort(int *arr, const int size)
 int main(int argc, char const *argv[])
 {
     sort(iA, 10);
-    printArray(iA, 10);
+    
+    puts("printing using range for loop");
+    for (auto& e : iA){
+        printf("%d ", e);
+    }
+    puts("");
+
     return 0;
 }

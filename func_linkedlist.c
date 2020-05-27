@@ -26,13 +26,16 @@ void printAll(struct Node* node){
 
 int main(int argc, char const *argv[])
 {
-    struct Node n1;
-    insert(&n1, 7);
-    insert(&n1, 12);
-    // printAll(&n1);
-    printf("%d ", n1._next->_data);
-    printf("%d ", n1._next->_next->_data);
-    printf("%d \n", n1._next->_next->_next->_data);
+    int iA[] = {1,2,3,4,5,6,7,8,9,0};
+
+    printf("Size of Array: %d\n", sizeof(iA)/sizeof(iA[0]));
+    // struct Node n1;
+    // insert(&n1, 7);
+    // insert(&n1, 12);
+    // // printAll(&n1);
+    // printf("%d ", n1._next->_data);
+    // printf("%d ", n1._next->_next->_data);
+    // printf("%d \n", n1._next->_next->_next->_data);
     
     return 0;
 }
